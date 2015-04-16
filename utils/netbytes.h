@@ -32,8 +32,8 @@ netbytes2uint32_m(uint8_t* s){
 
 static inline void
 uint322netbytes_m(uint32_t i, uint8_t* s){
-    s[0] = (uint8_t)(ret >> 24);
-    s[1] = (uint8_t)(ret >> 16);
-    s[2] = (uint8_t)(ret >> 8);
-    s[3] = (uint8_t)(ret);
+    s[0] = (uint8_t)(i >> 24);
+    s[1] = (uint8_t)(i >> 16);
+    s[2] = (uint8_t)(i >> 8);
+    s[3] = (uint8_t)(i);
 }
