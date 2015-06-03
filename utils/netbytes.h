@@ -22,10 +22,10 @@ uint322netbytes(uint32_t i, uint8_t* s){
 
 static inline uint32_t
 netbytes2uint32_m(uint8_t* s){
-    uint32_t a0 = s[0] << 24;
-    uint32_t a1 = s[1] << 16;
-    uint32_t a2 = s[2] << 8;
-    uint32_t a3 = s[3];
+    uint32_t a0 = (uint8_t)s[0] << 24;
+    uint32_t a1 = (uint8_t)s[1] << 16;
+    uint32_t a2 = (uint8_t)s[2] << 8;
+    uint32_t a3 = (uint8_t)s[3];
     uint32_t ret = (uint32_t)(a0 | a1 | a2 | a3);
     return ret;
 }
