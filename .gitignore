@@ -1,0 +1,14 @@
+*~
+*.so
+*.o
+*.lo
+*.bak
+*.swp
+*.tmp
+*.out
+*.md5
+*.tar.gz
+*.pid
+*.a
+test
+test.c

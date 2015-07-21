@@ -1,4 +1,7 @@
 
+#ifndef _NETBYTES_H_
+#define _NETBYTES_H_
+
 #include <stdio.h>
 #include <stdint.h>
 #include <arpa/inet.h>
@@ -37,3 +40,6 @@ uint322netbytes_m(uint32_t i, uint8_t* s){
     s[2] = (uint8_t)(i >> 8);
     s[3] = (uint8_t)(i);
 }
+
+#endif
+
